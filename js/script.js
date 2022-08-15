@@ -56,7 +56,7 @@ console.log('Wylosowana liczba to: ' + randomNumber);
 let computerMove = 'nieznany ruch';
 
 if(randomNumber == 1) {
-  computerMove = 'kamień';
+  computerMove = 'kamien';
 } else if (randomNumber == 2) {
     computerMove = 'nozyczki';
 } else if (randomNumber == 3) {
@@ -73,11 +73,33 @@ console.log('Gracz wpisał: ' + playerInput);
 let playerMove = 'nieznany ruch';
 
 if (playerInput == '1') {
-  playerMove = 'kamień';
+  playerMove = 'kamien';
 } else if (playerInput == '2') {
     playerMove = 'nozyczki';
-} else if (playerInput == '2') {
+} else if (playerInput == '3') {
     playerMove = 'papier';
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if (computerMove == 'kamien' && playerMove == 'papier') {
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'kamien' && playerMove == 'nozyczki') {
+    printMessage('Komputer wygrywa :((');
+} else if (computerMove == 'kamien' && playerMove == 'kamien') {
+    printMessage('Remis...');
+} else if (computerMove == 'nozyczki' && playerMove == 'kamien') {
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'nozyczki' && playerMove == 'papier') {
+    printMessage('Komputer wygrywa :((');
+} else if (computerMove == 'nozyczki' && playerMove == 'nozyczki') {
+    printMessage('Remis...');
+} else if (computerMove == 'papier' && playerMove == 'nozyczki') {
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'papier' && playerMove == 'kamien') {
+    printMessage('Komputer wygrywa :((');
+} else if (computerMove == 'papier' && playerMove == 'papier') {
+    printMessage('Remis...');
+} else {
+    printMessage('Wybierz numer od 1 do 3');
+  }
