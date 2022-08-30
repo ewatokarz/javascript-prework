@@ -1,5 +1,5 @@
 {
-  "name": "javascript-prework",
+  "name": "papier-kamien-nozyce",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,17 +19,6 @@
     "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\"",
     "watch:sassprefixer": "onchange sass/*.scss -- npm run build-dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ewatokarz/javascript-prework.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ewatokarz/javascript-prework.git"
-  },
-  "homepage": "https://github.com/ewatokarz/javascript-prework#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "browser-sync": "^2.27.10",
